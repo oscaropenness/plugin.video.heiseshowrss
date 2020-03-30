@@ -42,11 +42,11 @@ def run():
             thumb = "https://heise.cloudimg.io/bound/480x270/q75.png-lossy-75.webp-lossy-75.foil1/_www-heise-de_/ct/imgs/04/1/4/2/6/3/2/5/9cc02d4fe2a3a731.jpeg"
     
         #Baue fürs GUI ein Listenelement
-        list_item = xbmcgui.ListItem(label=title, label2=summary, thumbnailImage=thumb)
+        list_item = xbmcgui.ListItem(label=title, label2=summary)
     
         #Fanart des Plug-ins als Hintergrundbild nutzen
         ctuplink_plugin = xbmcaddon.Addon('plugin.video.heiseshowrss')
-        list_item.setArt({'fanart': ctuplink_plugin.getAddonInfo('fanart')})
+        list_item.setArt({'fanart': ctuplink_plugin.getAddonInfo('fanart'), 'thumb': thumb})
         
         list_item.setProperty('IsPlayable', 'true')            
         list_item.setInfo('video', {'plot': summary})
