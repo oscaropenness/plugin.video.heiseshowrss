@@ -13,7 +13,7 @@
         <summary lang="en_GB">#heiseshow Videopodcast</summary>
         <description lang="en_GB">Watch the weekly news discussion #heiseshow from heise online</description>
         <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <license>GPL-3.0-only</license>
         <source>https://github.com/oscaropenness/plugin.video.heiseshowrss</source>
 	<news>v1.0 (2020-03-29)
 		- initial release</news>
